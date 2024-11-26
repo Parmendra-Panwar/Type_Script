@@ -23,12 +23,36 @@ class User {
         this.age = age;
         this.id = id;
         this.city = "Ahamdabad"; //can assign ? to ignore the issue on not assign or use
+        this._courseCount = 1;
         name = name,
             age,
             id;
     }
+    get getAppleEmail() {
+        return `apple${this.name}@gmail.com`;
+    }
+    get courseCount() {
+        return this._courseCount;
+    }
+    set courseCount(value) {
+        this._courseCount = value;
+    }
+    deleteToken() {
+        console.log("Tokendeleted");
+    }
 }
 let Paras = new User("zcx", 1, "asd");
 console.log(Paras);
+let u = Paras.courseCount;
+console.log(u);
+class SubUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 10;
+    }
+}
 //Class Part 2 ended
 // export {}
