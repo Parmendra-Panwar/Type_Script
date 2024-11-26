@@ -10,3 +10,12 @@ if it helpFul , let me know https://www.linkedin.com/in/parmendr-panwar/
 ## TypeScript
 
 ### TypeScript
+
+Along with the TS file there is also a JS file with same name
+like for That particuler TS how its JS version going to looks like
+we can easily do that after installation of TS in System ,
+for creating TS to JS ->
+
+### tsc fileName.ts
+
+command is used
